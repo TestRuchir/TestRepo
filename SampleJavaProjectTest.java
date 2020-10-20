@@ -14,6 +14,7 @@ public class SampleJavaProjectTest {
      * Holds an instance of the class we are testing.
      */
     private SampleJavaProject sjp;
+    public int bug;
 
     /**
      * JUnit set up method.
