@@ -17,9 +17,16 @@ foreach ($files as $path) {
         // Test did not fail
         continue;
     }
+    
+     $outPath = $matches[1] . '.out';
+    if (!file_exists($outPath)) {
+        // Test did not fail
+        continue;
+    }
 
     $phpt = file_get_contents($path);
     $out = file_get_contents($outPath);
+    $out1;
 
     if (false !== strpos($phpt, '--XFAIL--')) {
         // Don't modify expected output of XFAIL tests
