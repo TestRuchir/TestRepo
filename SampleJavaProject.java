@@ -25,6 +25,7 @@ public class SampleJavaProject implements Runnable {
     @Parameter(names = "--name", description = "set the user's name",
                required = true)
     private String name = "world";
+    private String test;
 
     /** Command line parameter for --loop. */
     @Parameter(names = "--loop", description = "print endlessly, hotswap demo")
